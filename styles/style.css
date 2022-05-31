@@ -90,25 +90,28 @@ h1 {
     margin-top: 5px;
     width: 60%;
 }
+.upload-file {
+    border: 1px dashed #C3C7D9;
+    width: 60%;
+    height: 100px;
+    border-radius: 8px;
+    font-family: 'Inter';
+    color: #9BA2BC;
+    text-align: center;
+}
 
 #upload-file {
     margin-bottom: 0px;
+    display: none;
 }
 
 .country, span.condition-for-download {
     color: #9BA2BC;
     font-size: 12px;
     font-family: 'Inter';
-    
 }
 
 #user-request {
-    height: 100px;
-}
-
-#upload-file {
-    border: 1px dashed #C3C7D9;
-    width: 60%;
     height: 100px;
 }
 
@@ -204,7 +207,6 @@ footer {
 }
 
 .social-links {
-    
     padding: 5px 5px;
 }  
 
@@ -216,7 +218,6 @@ footer {
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
     background-size: 25px;
     margin-right: 10px;
 }
