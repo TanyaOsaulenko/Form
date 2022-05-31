@@ -1,0 +1,251 @@
+html {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}   
+
+header {
+    width: 100%;
+}
+
+.contact-form {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.menu>nav a {
+    color: #9BA2BC;
+    text-align: center; 
+    margin: 0px 20px;
+}
+
+.cabinet>img {
+    margin: 0px 20px;
+}
+
+.exist-notification {  
+    position: relative;
+    display: inline-block;
+}
+
+.exist-notification::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #3DB7FC;
+    margin: 2px 0 0 -10px;
+  }
+
+.avatar {
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 15px;
+    overflow: hidden;
+    width: 32px;
+    height: 32px;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 50px; 
+    line-height: 60px;   
+}
+
+.subtitle {
+    color: #9BA2BC;
+}
+
+.contact-form-header {
+    margin-bottom: 60px;
+    width: 50%;
+}
+
+.contact-form {
+    color: #535763;
+    border: 1px solid grey;
+}
+
+.contact-form-content>div {
+    display: inline-block;
+    width: 48%;
+    /* border: 1px solid lightgrey; */
+    vertical-align: top;
+}
+
+.contact-form-content input, .country, #user-request {
+    border: 1px solid #C3C7D9;
+    border-radius: 6px;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    width: 60%;
+}
+
+#upload-file {
+    margin-bottom: 0px;
+}
+
+.country, span.condition-for-download {
+    color: #9BA2BC;
+    font-size: 12px;
+    font-family: 'Inter';
+    
+}
+
+#user-request {
+    height: 100px;
+}
+
+#upload-file {
+    border: 1px dashed #C3C7D9;
+    width: 60%;
+    height: 100px;
+}
+
+.contact-form-content label, .contact-form-content input {
+    display: block;
+}
+
+#secret-range {
+    background: #6759FF;
+}
+
+#tickmarks {
+    display: content;
+    display: inline-flex;
+}
+
+.user-agreements label, .user-agreements input {
+    display: inline; 
+    vertical-align: middle;
+    margin: auto;
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+}
+
+.user-agreements input {
+    margin-right: 12px;
+}
+
+input[type="submit"] {
+    background: #6759FF; 
+    color: #F9F9FC;
+    height: 50px;
+    font-size: 20px;
+    font-family: inherit;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+input[type="submit"]:hover {
+    background-color: #8B6EFE;
+}
+
+input[type="submit"]:active {
+    background-color: #5528D6;
+}
+
+input[type="submit"]:disabled {
+    background-color: #EDEFF7;
+}
+
+footer {
+    background: #151A30;
+    color:  #F9F9FC;
+    font-size: 14px;
+    margin: 40px auto 0;
+    width: 100%;
+}
+
+.contact-data>div {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+    font-size: 14px;
+}
+
+.contact-data {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+/* .contact-data {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+.column {
+    display: flex;
+    width: 33%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    column-gap: 5px; 
+} */
+
+.email-for-CV {
+    color: yellow;
+}
+
+.social-links {
+    
+    padding: 5px 5px;
+}  
+
+.social-link  {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-size: 25px;
+    margin-right: 10px;
+}
+.social-link:last-child  {
+    margin-right: 0;
+}
+
+.instagram {
+    background-image: url("../images/instagram.png");
+}
+
+.fb {
+    background-image: url("../images/fb.png");
+    background-size: 15px;
+}
+
+.telegram {
+    background-image: url("../images/telegram.png");
+    background-size: 20px;
+}
+
+
+.flags {
+    width: 30px;
+    height: 20px;
+    float: left;
+}
+
+input {
+    border-radius: 6px;
+    vertical-align: middle;
+}
+
+.join-newsletter {
+  padding-left: 10px;
+}
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <title>Figma</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div>
+          <a href="#"><img src="images/logo.png" alt="logo"></a>
+        </div>
+        <div class="menu">
+          <nav>
+            <a href="#">Company</a>
+            <a href="#">Services</a>
+            <a href="#">FinTech</a>
+            <a href="#">Products</a>
+            <a href="#">Portfolio</a>
+          </nav>
+        </div>
+        <div class="cabinet">
+         <img src="images/search.png" alt="search">
+         <div class="exist-notification"><img src="images/notification.png" alt="notification"></div>
+         <div class="avatar"><img src="images/avatar.png" alt="avatar"></div>
+        </div>
+      </div>
+    </header>
+    <div class="contact-form">
+      <div class="contact-form-header">
+        <h1>Contact us</h1>
+        <p class="subtitle">Need an experienced and skilled hand with custom IT projects? Fill out the form to get a free consultation.</p>
+      </div>
+      <div class="contact-form-content">
+        <div>
+          <label for="company-name">Your company name*</label> 
+          <input type="text" id="company-name" name="company-name" required>
+          <label for="type-of-business">Nature of Business*</label> 
+          <input type="text" id="type-of-business" name="type-of-business" required>
+          <label for="registration-date">Date of registration:</label>
+          <input type="date" id="registration-date" name="registration-date">
+          <label for="contact-name">Contact name</label> 
+          <input type="text" id="contact-name" name="contact-name">
+          <label for="phone">Contact phone</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+          <label for="email">Email*</label>
+          <input type="email" id="email" required>
+          <label for="upload-file"></label>
+          <input type="file" id="upload-file" name="upload-file" accept="image/png, image/jpeg, /.pdf" value="Upload additional file" multiple>
+          <span class="condition-for-download">File size of your documents should not exceed 10MB</span>
+          <input type="submit" value="SUBMIT">
+          <div class="user-agreements">
+            <label for="protect">
+              <input type="radio" id="protect" name="protect" value="protect">
+              I want to protect my data by signing an HDA
+            </label>
+          </div>
+        </div>
+        <div>
+          <label>Country of registration*</label> 
+          <select class="country" name="country" required>
+            <option value="">Select</option>
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 3</option>
+            <option value="Option 4">Option 4</option>
+          </select>
+          <label for="address">Address</label> 
+          <input type="text" id="address" name="address">
+          <label for="postcode">Postcode</label> 
+          <input type="text" id="postcode" name="postcode">
+          <label for="user-request">Lets talk about your idea</label>
+          <textarea id="user-request" name="user-request"></textarea> 
+          <input type="range" id="secret-range" name="secret-range" list="tickmarks" min="0" max="100" value="50">
+          <datalist id="tickmarks">
+            <option value="0" label="0">
+            <option value="10">
+            <option value="20">
+            <option value="30">
+            <option value="40">
+            <option value="50">
+            <option value="60">
+            <option value="70">
+            <option value="80">
+            <option value="90">
+            <option value="100" label="100">
+          </datalist>
+          <div class="user-agreements">
+            <div>
+              <label for="data-protect">
+                <input type="checkbox" id="data-protect" name="data-protect">
+                I want to protect my data by signing an HDA
+              </label>
+            </div>
+            <div>
+              <label for="conditions-accepted">
+                <input type="checkbox" id="conditions-accepted" name="conditions-accepted">
+                I have read and accept the terms and conditions
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="contact-data">
+        <div class="column">
+          <h2>Career</h2>
+          <p>If you are interested in working at Logo <br> send us your CV to <a class="email-for-CV" href="mailto:careers@logo.com"> careers@logo.com</a> <br> and we can talk</p>
+          <div class="social-links">
+            <a class="social-link instagram" href="#"></a>
+            <a class="social-link fb" href="#"></a>
+            <a class="social-link telegram" href="#"></a>
+          </div>
+        </div>
+        <div class="column">
+          <h2>Offices</h2>
+          <p>United States of America <br> 500 5th Avenue Suite 400, NY 10110</p>
+          <p>United Kingdom <br> High St, Bromley BR1 1DN</p>
+          <p>France <br> 80 avenue des Terroirs de France, Paris</p>
+        </div>
+        <div class="column">
+          <h2>For Quick Inquiriess</h2>
+          <p class="phone-number">
+            <img class="flags" src="images/gb.png" alt="Great Britain flag">+44 7911 123456
+          </p>
+          <p class="phone-number">
+            <img class="flags" src="images/usa.png" alt="USA flag">+1-212-456-7890
+          </p>
+          <p class="join-newsletter">Join our newsletter!</p>
+          <input type="email" id="email" placeholder="Email"><input type="checkbox" id="email" name="email">
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
