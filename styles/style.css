@@ -18,10 +18,13 @@ header {
     margin: 0 auto;
     width: 1200px;
 }
+.menu {
+    display: flex; 
+    align-items: center;
+}
 
 .menu>nav a {
     color: #9BA2BC;
-    text-align: center; 
     margin: 0px 20px;
 }
 
@@ -70,7 +73,6 @@ h1 {
 
 .contact-form {
     color: #535763;
-    border: 1px solid grey;
 }
 
 .contact-form-content>div {
