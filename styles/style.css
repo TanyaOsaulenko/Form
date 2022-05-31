@@ -116,11 +116,14 @@ h1 {
 
 #secret-range {
     background: #6759FF;
+    margin-bottom: 0px;
 }
 
 #tickmarks {
-    display: content;
-    display: inline-flex;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-bottom: 20px;
 }
 
 .user-agreements label, .user-agreements input {
