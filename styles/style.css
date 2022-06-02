@@ -5,6 +5,15 @@ html {
 
 header {
     width: 100%;
+    padding: 20px 0 20px 0;
+    font-weight: 600;
+    background-color: #F9F9FC;
+    box-shadow: 0px 1px 6px rgba(220, 219, 235, 0.9);
+   
+}
+
+.cabinet:active {
+    color: #535763;
 }
 
 .contact-form {
@@ -12,7 +21,7 @@ header {
   width: 1200px;
 }
 
-.header {
+.header-block {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -26,6 +35,10 @@ header {
 .menu>nav a {
     color: #9BA2BC;
     margin: 0px 20px;
+}
+
+.menu>nav a:active {
+    color: #535763;
 }
 
 .cabinet>img {
@@ -58,6 +71,7 @@ header {
 
 h1 {
     font-weight: 800;
+    font-style: normal;
     font-size: 50px; 
     line-height: 60px;   
 }
@@ -89,10 +103,6 @@ h1 {
     margin-bottom: 20px;
     margin-top: 5px;
     width: 60%;
-}
-
-#registration-date {
-    padding-left: 20px;
 }
 
 .upload-file {
@@ -256,10 +266,13 @@ footer {
 input {
     border-radius: 12px;
     vertical-align: middle;
+    padding-left: 20px;
 }
 
 label {
     padding-left: 20px;
+    Font: 'Montserrat';
+    font-weight: 600;
 }
 
 .join-newsletter {
