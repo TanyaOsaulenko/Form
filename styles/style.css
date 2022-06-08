@@ -1,15 +1,35 @@
 html {
     font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
-}   
+} 
+ 
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url("/fonts/Montserrat-VariableFont_wght.ttf");
+}
 
-header {
-    width: 100%;
-    padding: 20px 0 20px 0;
-    font-weight: 600;
+body {
     background-color: #F9F9FC;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    font-weight: 800;
+    position: fixed;
+    top: 0;
+    background: #F9F9FC;
     box-shadow: 0px 1px 6px rgba(220, 219, 235, 0.9);
-   
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+    width: 1200px;
 }
 
 .cabinet:active {
@@ -17,19 +37,18 @@ header {
 }
 
 .contact-form {
-  margin: 0 auto;
+  margin: 160px auto 0;
   width: 1200px;
+
+
 }
 
-.header-block {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 1200px;
-}
+
 .menu {
     display: flex; 
     align-items: center;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 .menu>nav a {
@@ -103,6 +122,7 @@ h1 {
     margin-bottom: 20px;
     margin-top: 5px;
     width: 60%;
+    resize: none;
 }
 
 .upload-file {
@@ -112,8 +132,18 @@ h1 {
     line-height: 100px;
     border-radius: 8px;
     font-family: 'Inter';
-    color: #9BA2BC;
+    color: #535763;
     text-align: center;
+    cursor: pointer;
+    padding-left: 0;
+    
+}
+.download-icon {
+    width: 15px;
+    height: 17px;
+    padding: 40px 15px 0 0;
+  
+    
 }
 
 #upload-file {
@@ -128,6 +158,8 @@ h1 {
     font-family: 'Inter';
 }
 
+
+
 #user-request {
     height: 100px;
 }
@@ -139,6 +171,7 @@ h1 {
 #secret-range {
     background: #6759FF;
     margin-bottom: 0px;
+    cursor: pointer;
 }
 
 #tickmarks {
@@ -169,6 +202,7 @@ input[type="submit"] {
     font-family: inherit;
     margin-top: 50px;
     margin-bottom: 25px;
+    cursor: pointer;
 }
 
 input[type="submit"]:hover {
@@ -202,22 +236,6 @@ footer {
     margin: 0 auto;
     width: 1200px;
 }
-
-/* .contact-data {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    
-}
-.column {
-    display: flex;
-    width: 33%;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-content: stretch;
-    column-gap: 5px; 
-} */
 
 .email-for-CV {
     color: yellow;
@@ -258,21 +276,43 @@ footer {
 
 
 .flags {
-    width: 30px;
-    height: 20px;
-    float: left;
+    width: 20px;
+    height: 12px;
+    margin-right: 12px;
 }
 
 input {
     border-radius: 12px;
     vertical-align: middle;
     padding-left: 20px;
+    box-sizing: border-box;
+}
+
+input:invalid {
+    border: 1px solid #ED7474;
+}
+
+input:valid {
+    border: 1px solid #42CF81;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+    opacity: 0;
 }
 
 label {
     padding-left: 20px;
-    Font: 'Montserrat';
+    font-family: 'Montserrat';
+    font-style: normal;
     font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    
+}
+
+label.required::after {
+    content: "*";
+    padding-left: 5px;
 }
 
 .join-newsletter {
